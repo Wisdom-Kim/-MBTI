@@ -1,6 +1,18 @@
 #main {
-    background-color: whitesmoke;
+    background-color: transparent;
     width:80%;
     text-align: center;
     border-radius:20px
+}
+
+#startButton{
+    background-color: #56b3ff;
+    color:white;
+    width: 50%;
+    height: 30%;
+    border-radius: 15px;
+    margin:10pt;
+    word-break: keep-all;
+    font-size:20pt;
+    border-color: transparent;
 }

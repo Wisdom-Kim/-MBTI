@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+     <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+    <!--domain-->
+    <meta property="og:url" content="https://whatismyposition.netlify.app" />
+    <meta property="og:title" content="내가 밴드를 한다면 어떤 포지션일까?" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/main.png" />
+    <meta property="og:description" content="내가 밴드를 한다면 어떤 포지션일까?한 번 알아보자!" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +20,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <link rel="stylesheet" href="./css/animation.css">
 </head>
 <body>
     <div class="container">
@@ -16,29 +29,50 @@
             <h3 class="pt-4">내가 밴드를 하면 어떤 포지션일까?</h3>
             <div class="col-lg-6 col-md-8 col-ms-10 col-12 mx-auto">
 
-                <img src="./src/넙죽이.jpg" class="img-fluid pt-2 pb-2">
+                <img src="./img/main.png" class="img-fluid pt-2 pb-2">
             
             </div>
-            <h4 class="pt-1">내가 밴드를 한다면! 보컬, 기타, 키보드, 베이스, 드럼 중 어떤 포지션일까?</h2>
-            <button type="button" class="btn btn-outline-info mt-2"onclick="js:begin()">시작하기</button>
+            <h4 class="pt-1">내가 밴드를 한다면! <br>보컬, 기타, 키보드, 베이스, 드럼 중 어떤 포지션일까?</h2>
+            <button id="startButton"type="button" onclick="js:begin()">시작하기</button>
+                
         </section>
     </div>
     <section id="qna">
-        <div class="mx-auto mt-5 pt-5 pb-5 px-3">
+        
+        <div class="status mx-auto mt-5">
+            <div class="statusBar">
+        </div>
+        <div class="mx-auto mt-5 pt-3 pb-5 px-3">
+            <div class="qNum">
+
+            </div>
             <div class="qBox">
             </div>
             <button id ="A" type="button" onclick="js:answer()">대답 E</button>
             <button id ="B" type="button" onclick="js:next()">대답 I</button>
         </div>
-        <div id="result">
+        <div id="resultValue">
             <input type="hidden" id="EI" value="0">
             <input type="hidden" id="NS" value="0">
             <input type="hidden" id="FT" value="0">
             <input type="hidden" id="PJ" value="0">
         </div>
     </section>
-    <section id="result"></section>
+    <section id="result"class="mx-auto mt-5 pt-5 pb-5 px-3">
+        <div class="resultname">
+
+        </div>
+        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+  
+        </div>
+        <div class="resultDesc"class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+  
+        </div>
+        <button id="startButton"type="button"style="font-size:20pt;">뱃지 받아가기</button>
+        <button id="startButton"type="button"style="font-size:20pt;" onclick="js:reload()">처음부터 다시하기</button>
+    </section>
     <script src="./js/start.js" charset="UTF-8"></script>
     <script src="./js/data.js" charset="UTF-8"></script>
+    <script src="./js/share.js" charset="utf-8"></script>
 </body>
 </html>

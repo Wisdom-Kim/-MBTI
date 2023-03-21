@@ -1,6 +1,6 @@
 #result{
   display: none;
-  background-color: whitesmoke;
+  background-color: transparent;
   width: 80%;
   text-align: center;
   border-radius: 20px;
@@ -11,10 +11,12 @@
 }
 
 .resultDesc{
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   margin: auto;
   padding-top: 10px;
+  padding-bottom: 10px;
+  width:80%;
 }
 
 .kakao{

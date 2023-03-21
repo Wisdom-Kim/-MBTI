@@ -8,3 +8,16 @@
 p{
   font-size: 20px;
 }
+
+#startButton{
+  background-color: #56b3ff;
+  color:white;
+  width: 80%;
+  height: 20%;
+  padding:30pt;
+  border-radius: 15px;
+  margin:20pt;
+  word-break: keep-all;
+  font-size:13pt;
+  border-color: transparent;
+}
